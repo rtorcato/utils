@@ -1,0 +1,55 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  //, "airbnb"
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:jest/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "airbnb/hooks",
+    "plugin:jsx-a11y/recommended",
+    "prettier/@typescript-eslint",
+    "prettier",
+    "prettier/react"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "jsx": true,
+    "sourceType": "module",
+    "useJSXTextNode": true
+  },
+  "plugins": ["@typescript-eslint", "import", "jest", "react", "prettier", "jsx-a11y"],
+  "rules": {
+    "semi": "off",
+    "react/prop-types": "off", // Disable prop-types as we use TypeScript for type checking
+    // "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true,
+        "allowTypedFunctionExpressions": true
+      }
+    ],
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+    "@typescript-eslint/interface-name-prefix": [
+      "error",
+      {
+        "prefixWithI": "always"
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

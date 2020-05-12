@@ -1,0 +1,23 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "Utility function for javascript projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtorcato/utils.git"
+  },
+  "keywords": [],
+  "author": "Richard Torcato <rtorcato@me.com> (https://www.matrixdigital.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rtorcato/utils/issues"
+  },
+  "homepage": "https://github.com/rtorcato/utils#readme",
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
+}

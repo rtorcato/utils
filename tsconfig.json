@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "baseUrl": "./src/",
+    "paths": {
+      "*": ["*", "src/@types/*"] //,
+    },
+    "types": ["node"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "removeComments": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "noEmit": true,
+    "jsx": "react",
+    "typeRoots": ["./src/@types/", "src/@types", "../node_modules/@types"] //, "./node_modules/@types"
+  },
+  "include": ["src", "src/@types/*"],
+  "exclude": ["node_modules", "public", ".cache", ".git", ".vscode"]
+}

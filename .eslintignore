@@ -1,0 +1,9 @@
+src/serviceWorker.js
+src/**/__tests__/**
+/build
+/public
+.vscode
+.git
+/node_modules
+/old
+/static
