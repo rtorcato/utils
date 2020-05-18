@@ -1,28 +1,34 @@
 {
   "compilerOptions": {
+    "lib": ["es2017"],
     "target": "es5",
     "baseUrl": "./src/",
     "paths": {
       "*": ["*", "src/@types/*"] //,
     },
-    "types": ["node"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "declaration": true,
+    "types": ["mocha", "node", "chai"],
+    // "noEmit": true,
+    // "allowJs": true,
+    // "jsx": "react",
+    "skipLibCheck": true,
+    // rules
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
+    "noImplicitReturns": true,
     "removeComments": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": false,
     "noImplicitThis": true,
-    "noUnusedParameters": true,
-    "noEmit": true,
-    "jsx": "react",
-    "typeRoots": ["./src/@types/", "src/@types", "../node_modules/@types"] //, "./node_modules/@types"
+    "noUnusedParameters": true
   },
+  "compileOnSave": true,
   "include": ["src", "src/@types/*"],
-  "exclude": ["node_modules", "public", ".cache", ".git", ".vscode"]
+  "exclude": ["node_modules", "public", ".cache", ".git", ".vscode"],
+  "typeRoots": ["./src/@types/", "src/@types", "../node_modules/@types"]
 }
